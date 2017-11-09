@@ -24,10 +24,10 @@ public class App {
 		options.addOption("q", "qos", true, "set qos value");
 		
 	    Option optionAddress = new Option("a", "address", true, "Broker address, like host:port");
-		optionAddress.setRequired(true);
+		optionAddress.setRequired(false);
 		options.addOption(optionAddress);
 	    Option optionTopic = new Option("t", "topic", true, "topic to publish");
-	    optionTopic.setRequired(true);
+	    optionTopic.setRequired(false);
 		options.addOption(optionTopic);
 		
 		PublisherParam publisherParam = new PublisherParam();
